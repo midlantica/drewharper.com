@@ -1,0 +1,26 @@
+<%= partial "ie_no_js" %>
+
+<html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Use title if it's in the page YAML frontmatter -->
+        
+        <title><%= data.page.title || "Drew Harper - UI/UX Designer, Front-End Dev" %></title>
+        
+        <%= partial "head" %>
+        
+    </head>
+    
+    <body>
+        
+        <%= partial "lt_than_ie7" %> 
+
+        <%= yield %>
+
+        <%= partial "js_footer" %> 
+
+
+    </body>
+</html>

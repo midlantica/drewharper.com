@@ -1,0 +1,998 @@
+@import "base";
+
+$grey:			#444444; 
+$blue-dark:		rgba(70,100,110, 1.0); // #46646E
+$blue-mid:		rgba(91,125,150, 1.0); //#5B7D96
+$blue-light:	rgba(143,169,194, 1.0); //#8FA9C2
+// $accent:		rgba(236,180,105, 1.0); //#ECB469 PEACH
+$accent:		orange;
+
+$ivory:			rgba(255,253,244, 1.0); // #FFFDF4 IVORY
+// $orange:		rgba(227,66,52, 1.0); // #e34234 Dark ORANGE
+$paleyellow:	rgba(255, 255, 191, 0.6); //pale yellow trans
+$accent-red: 	#C02C19;
+
+$base-font-size: 	.85em;	
+$base-line-height: 	1.7em;
+
+$font: 			"Helvetica Neue", Arial, sans-serif;
+$font-head: 	"VeneerTwo", Helvetica, Arial, sans-serif;
+$font-subhead: 	"Veneer", Helvetica, Arial, sans-serif;
+$font-copy: 	"AmericanTypewriterStd-Med", Helvetica, Arial, sans-serif;
+
+@mixin shadow {
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.5),0 3px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0,0.5),0 3px 5px rgba(0,0,0,0.2);
+	-ms-box-shadow: 0 0 4px rgba(0,0,0,0.5),0 3px 5px rgba(0,0,0,0.2);
+	-o-box-shadow: 0 0 4px rgba(0,0,0,0.5),0 3px 5px rgba(0,0,0,0.2);
+	box-shadow: 0 0 4px rgba(0,0,0,0.5),0 3px 5px rgba(0,0,0,0.2);
+}
+
+@mixin no-shadow {
+	text-shadow: 0px 0px 0px;
+	filter: none;
+}
+
+a {
+  @include link-colors(
+  	$normal: $blue-dark, 
+  	$visited: $blue-dark, 
+  	$hover: $accent); 
+}
+
+$default-text-shadow-color: 	rgba($accent-red, 1.0);
+$default-text-shadow-blur: 		3px;
+$default-text-shadow-h-offset: 	3px;
+
+$rgbapng_path: 'img';
+$rgbapng_px_size: 8;
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// MAIN STYLES
+
+// @include susy-grid-background; 
+
+html {
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	// background-size: cover;
+	// background: url(../img/bg/bg01-bl.png) repeat; 
+	// background: url(../img/bg-steel-dk-02.png) repeat;  
+}
+
+
+body {
+	font-family: $font;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	// background-color: none;
+	// background-color: $blue-dark;
+}
+
+
+.fluid-container {
+	@include container($total-columns, $tablet, $mini-tablet, $mobile); 
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	background: url(../img/bg/graphy_2.png) repeat; 
+	// @include susy-grid-background;
+}
+
+header, footer {
+	// background-color: $blue-dark;
+	// margin: 0 0 1em 0;
+	// padding: 1em;
+	// width: 100%;
+	// height: 103px;
+	// @include clearfix;
+	color: $ivory; 
+	// background: url(../img/bg01-bl.png) repeat; 
+	// @include span-columns(12);
+	@include shadow;
+	clear: both;
+	// @include clearfix;
+	@include span-columns(12);
+}
+
+header {
+	margin: 0 0 1em 0;
+	background: url(../img/bg/bg_bag_dk.jpg) repeat;
+}
+
+footer {
+	margin: 1em 0 0 0;
+	background: url(../img/bg/bg_bag_dk2.jpg) repeat;
+}
+
+.background {
+	// background: url(..background: url(../img/bg02.png) repeat;/img/bg-steel-02.png) repeat;
+	// @include pie-clearfix;
+	// clear: both;
+	padding: 1em 0 1.5em 0;
+	// margin: 1em;
+}
+
+.content {
+	@include span-columns(12);
+	// @include isolate(2);
+	display: block;
+	clear: left;
+	text-align: left;
+	clear: both;
+	// @include susy-grid-background;
+	// margin: 0 0 1em 0;
+	// background: gray;
+
+	.left {
+		@include span-columns(5);
+		@include isolate(2);
+	}
+
+	.right {
+		@include span-columns(5);
+		@include isolate(7);
+	}
+
+}
+
+// #############
+// NAVIGATION
+// ############
+
+#index .home, 
+#resume .resume, 
+#portfolio .portfolio,
+	{
+	background-color: $accent;
+}
+
+.nav {
+	// background: url(../img/bg01-bl.png) repeat;
+	// background-color: $blue-dark;
+	// @include span-columns(12);
+	@include span-columns(10);
+	@include isolate(2);
+	// @include susy-grid-background;
+}
+
+.nav h1 {
+	display: block;
+	float: left;
+	margin: .2em 0 .2em 0;
+	padding: 0;
+	font-family: $font-head;
+	font-size: 5em;
+	color: $ivory;
+	@include single-text-shadow(5px);
+	line-height: 90%;
+}
+
+.nav h1 a {
+	margin: 0em 0 0em 0;
+	text-decoration: none;
+}
+.nav h1 a:hover {
+	color: $accent;
+}
+
+.nav h2 {
+	font-family: $font-subhead;
+	font-size: 2.125em;
+	margin: .631em 0 0 .4em;
+	padding:0;
+	// @include span-columns(8);
+	// @include isolate(5);
+	display: inline-block;
+	float: left;
+	width: 205px;
+	color: $ivory;
+	@include single-text-shadow;
+	letter-spacing: 0.06em;
+	line-height: .968em;
+}
+
+.nav a {
+	color: $ivory;
+	&:hover {
+		color: $accent;
+	}
+}
+
+.contact {
+	color: $ivory;
+	margin: .55em 1em 0 0;
+	padding: 0;
+	// @include span-columns(2);
+	// @include isolate(9);
+	display: block;
+	float: right;
+	font-family: $font-subhead;
+	font-size: 1.5em;
+	text-align: center;
+	@include at-breakpoint($tablet) {
+		font-size: 1.25em;
+	}
+	// @include at-breakpoint($tabletSm) {
+	// 	font-size: 1em;
+	// }
+
+	.email {
+		line-height: 1.1em;
+		margin: .75em 0 0 0;
+		padding: 0;
+		letter-spacing: .05em;
+
+		a {
+			text-decoration: none;
+			&:hover {
+				color: $accent;		
+			}
+		}
+	}
+	.resume {
+		line-height: 1em;
+		margin: .0em 0 0 0;
+		padding: 0;
+		letter-spacing: .05em;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+}
+
+//  END NAVIGATION <<<<<<<<<<
+// ##########
+
+//  >>>>>>>>>>>>>>
+// TYPE CONTROL
+//  >>>>>>>>>>>>>>
+
+h1, h2, h3, h4, h5 {
+	color: $accent-red;
+	line-height: 1.1em;
+	font-weight: normal;
+	text-align: left;
+	margin: .75em 0 .25em 0;
+	padding: 0;
+	letter-spacing: .025em;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-family: $font-head;
+}
+
+h2, h3, h4, h5 {
+	font-family: $font-subhead;
+}
+
+.left .head {
+	margin: 0 0 1em 0;
+	// @include span-columns(6);
+	// @include isolate(1);
+	// @include clearfix;
+	float: left;
+	display: inline-block;
+	clear: both;
+	width: 100%;
+}
+
+	.left .head .drewhead {
+		margin: 0 1em 0 0;
+		padding: 0;
+		width: 73px;
+		height: 89px;
+		// background-image: url('/img/ava_head.png');
+		background-image: url('../img/drew_head.png');
+		float: left;
+		display: block;
+		clear: left;
+	}
+
+	.left .head h1 {
+		font-size: 1.75em;
+		font-family: $font-subhead;
+		// display: inline;
+		// float: left;
+		// clear: left;
+		// width: 340px;
+		margin: 1.25em 0em 0 0;
+		color: $accent-red;
+		line-height: 1.1em;
+		@include single-text-shadow(white);
+		padding: 0 2em 0 0;
+	}
+
+.left p {
+	font-size: 0.825rem;
+	color: $grey;
+	display: inline-block;
+	float: left;
+	clear: left;
+	margin: 0 1.5em 0 .8rem;
+	line-height: 2.2em;
+	letter-spacing: 0.075em;
+}
+
+
+.about {
+		display: inline-block;
+		float: left;
+		// clear: left;
+		// background-color: $paleyellow;
+		background-image: url('../img/bg/bg_bag_y.png');
+		background-repeat: repeat;
+		margin: .3em 0 1em 0;
+		padding: 1em .5em .3em .75em;
+		width: 95.4%;
+		@include shadow;
+}
+
+	.aboutinner {
+		display: inline-block;
+		// @include susy-grid-background;
+	}
+
+	.about .british_american_flag {
+		@include span-columns(2);
+		@include isolate(1);
+	}
+
+	.about .british_american_flag img {
+		width: 100%;
+		height: auto;
+	}
+
+	.about .copy {
+		font-size: .85em;	
+		@include span-columns(10);
+		@include isolate(3);
+	}
+
+	.about .copy p {
+		margin: 0 0 0 1em;
+	}
+
+
+h2 {
+	font-size: 2.25em;
+	color: $accent;
+	text-transform: capitalize;
+	font-family: $font-subhead;
+}
+
+.content h2:first-of-type {
+	margin: 0 0 0 0;
+
+}
+
+h3 {
+	font-size: 1.7em;
+	color: $blue-dark;
+}
+
+h4 {
+	font-size: 1.5em;
+	letter-spacing: .04em;
+}
+
+h5 {
+	font-size: $base-font-size;
+}
+
+
+p {
+	font-family: $font-copy;
+	color: $blue-mid;
+	line-height: $base-line-height;
+	font-weight: normal;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	// letter-spacing: -.025em;
+}
+
+ul {
+	list-style-type: square;
+	padding: 0;
+	margin: 0 -1em 1em 0em;
+	font-family: $font-copy;
+	color: $blue-mid;
+	line-height: $base-line-height;
+	text-align: left;
+}
+
+li {
+	list-style-position: outside;
+	margin: .25em 0em 0 1em;
+	padding-left: -1em;
+	line-height: 1.6em;
+}
+
+.indent {
+	padding-left: 1.5em;
+}
+
+.one {
+	// @include span-columns(3,12);
+	background-color: $blue-light;
+	// border: 1px solid $blue-light;
+	background: url(../img/bg-steel-02.png) repeat;
+	margin: 0 0 1em 0;
+}
+
+.two {
+	// @include span-columns(3,12);
+	background-color: $blue-light;
+	// border: 1px solid $blue-light;
+	background: url(../img/bg-steel-02.png) repeat;
+	margin: 0 0 1em 0;
+}
+
+.three {
+	// @include span-columns(3,12);
+	background-color: $blue-light;
+	// border: 1px solid $blue-light;
+	background: url(../img/bg-steel-02.png) repeat;
+	margin: 0 0 1em 0;
+}
+
+.four {
+	// @include span-columns(2 omega,8);
+	background-color: $blue-light;
+	// border: 1px solid $blue-light;
+	// background: url(../img/bg-steel-02.png) repeat;
+	margin: 0 0 1em 0;
+}
+
+
+.skills {
+	display: inline-block;
+	float: left;
+	clear: left;
+	margin: .5em 0 0 0;
+	padding: 0;
+	text-align: center;
+	// @include susy-grid-background; 
+
+	.col1 {
+		@include span-columns(3);
+		@include isolate(1);
+		// clear: left;
+		// display: inline-block;
+	}
+	.col2 {
+		@include span-columns(3);
+		@include isolate(4);
+		// clear: left;
+		// display: inline-block;
+	}
+	.col3 {
+		@include span-columns(3);
+		@include isolate(7);
+		// clear: left;
+		// display: inline-block;
+	}
+	.col4 {
+		@include span-columns(3);
+		@include isolate(10);
+		// clear: left;
+		// display: inline-block;
+	}
+	.icon {
+		display: inline-block;
+		clear: left;
+		// margin: 0 0 1em 0;
+		margin: 0 0.7rem 1rem;
+		padding: 0;
+		width: 68px;
+		text-align: center;
+	}
+}
+
+
+
+.right .flexslider {
+	// width: 432px;
+	// height: 310px;
+	background-color: $ivory;
+	display: block;
+	clear: both;
+	margin: 2em 0 1em 0;
+	// @include span-columns(10);
+	// @include isolate(3);
+	float: left;
+	clear: both;
+	padding: 0;
+	width: 98%;
+	@include shadow;
+}
+
+.flexslider .slides img {
+	width: 100%;
+	height: auto;
+}
+
+	.slides > li {
+		margin: 0em;
+	}
+
+		.flex-control-nav {
+			display: none;
+		}
+
+.quote {
+	// padding: 0;
+	float: left;
+	clear: both; 
+	display: block;
+	width: 100%;
+	height: 100px;
+	margin: 0em 0 0em 0;
+	// @include span-columns(10);
+	// background: red;
+}
+
+	blockquote {
+		// width: 432px;
+		// height: 73px;
+		background-color: darkred;
+		margin: 0;
+		padding: .25em 1em .75em 1em;
+		// @include shadow;
+		// @include span-columns(10);
+		// @include isolate(3);
+		// width: 424px; /* required */
+		@include shadow;
+	}
+
+	.right blockquote p {
+		color: $ivory;
+		padding: .75em .5em 0em .5em;
+		text-align: center;
+		letter-spacing: .08em;
+		font-size: .95em;
+	}
+
+	blockquote cite {
+		color: $ivory;
+		font-style: italic;
+		margin: 0 4em 0 0;
+		display: block; 
+		text-align: right; 
+		font-size: .8em;
+		letter-spacing: .08em;
+	}
+
+
+
+// >>>>>>>>>>>>>>
+// / END TYPE CONTROL
+// >>>>>>>>>>>>>>
+
+
+// #####################
+// #####################
+//  ___     __     _____ 
+//   |  /\ |__)|  |_  |  
+//   | /--\|__)|__|__ |  
+//                       
+// #####################
+
+// #####################
+
+@include at-breakpoint($tablet) {
+
+	.content {
+		// @include span-columns(10);
+		// @include isolate(2);
+		// display: block;
+		// clear: left;
+		// text-align: left;
+		// clear: both;
+		// @include susy-grid-background;
+		// margin: 0 0 1em 0;
+		// background: gray;
+		
+		.left {
+			@include span-columns(10);
+			@include isolate(2);
+			clear: both;
+		}
+
+		.right {
+			@include span-columns(10);
+			@include isolate(2);
+			clear: both;
+		}
+
+	}
+
+	.nav h1 {
+		font-size: 4.8em;
+		margin: .15em 0 -4px -4px;
+		display: block;
+		float: left;
+		clear: left;
+		// background-color: orange;
+		// @include span-columns(6);
+		// @include isolate(2);
+	}
+
+	.nav h2 {
+		font-size: 2.25em;
+		// float: right;
+		margin: .4em 0 .7em 0;
+		letter-spacing: 0em;
+		// width: inherit;
+		display: block;
+		float: left;
+		clear: left;
+		width: auto;
+		// background: red;
+		// @include at-breakpoint($tabletSm) { 
+		// 	font-size: 2.25em;
+		// }
+	}
+
+	
+	.nav .contact {
+		margin: -2em 1em 0 0;
+		padding: 0;
+		display: inline-block;
+		float: right;
+		clear: right;
+		width: auto;
+		// background-color: red;
+	}
+
+		.nav .contact .email {
+			font-size: 1.3em;
+			line-height: 1.3em;
+			margin: 0;
+			padding: 0;
+			letter-spacing: .08em;
+			// display: inline-block;
+			// float: left; 
+			text-align: center;
+			letter-spacing: 1px;
+			width: auto;
+		}
+
+		.nav .contact .resume {
+			font-size: 1.3em;
+			// line-height: 1.5em;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+			// display: inline-block;
+			// float: left; 
+			text-align: center;
+			letter-spacing: 1px;
+			width: auto;
+		}
+
+
+	// >>>>>>>>>>>>>>>>>>>>>>>>
+
+	.left .head {
+		margin: 0.5em 0 .75em 0;
+	}
+
+	.left .head .drewhead {
+		margin: 0 1em 0 0;
+		padding: 0;
+		width: 73px;
+		height: 89px;
+		// background-image: url('/img/ava_head.png');
+		// background-image: url('/img/drew_head.png');
+		float: left;
+		display: block;
+		clear: left;
+		// background-color: red;
+	}
+
+	.left .head h1 {
+		font-size: 2.35em;
+		display: block;
+		float: none;
+		clear: none;
+		width: auto;
+		margin: .5em 0 0 0;
+		padding: 0 2em 0 0;
+		color: $accent-red;
+		line-height: 1.1em;
+		@include single-text-shadow(white);
+		font-family: $font-subhead;
+		width: 80%;
+		
+		// @media (max-width: 58em) {
+		// 	font-size: 1.65rem;
+		// 	// background: green;
+		// }
+
+
+	}
+
+	.left p {
+		// font-size: 1em;
+		color: $grey;
+		display: inline-block;
+		float: left;
+		clear: left;
+		margin: 0 0em 0 0;
+		line-height: 1.8em;
+		letter-spacing: 0.075em;
+		margin: 0 0 1em 0;
+	}
+
+	// <<<<<<<<<<<<<<<<<<<<<<<<<<
+
+	.right .flexslider {
+		margin: 0 0 1em 0;
+	}
+
+	.about {
+		width: 96.8%;
+	}
+	.quote {
+		width: 99.3%;
+	}
+
+
+} // END TABLET
+
+// ############ END TABLET
+// #######################################
+
+
+// #####################
+// #####################
+//  MINI <><><><>><><><><><><>
+//  ___     __     _____ 
+//   |  /\ |__)|  |_  |  
+//   | /--\|__)|__|__ |  
+//                       
+// #####################
+// #####################
+
+@include at-breakpoint($mini-tablet) {
+
+	.nav h1 {
+		font-size: 4.7em;
+		margin: .2em 0 0em 0;
+		letter-spacing: .02em;
+		// background-color: green;
+	}
+
+	.nav h2 {
+		font-size: 1.7em;
+		margin: .2em 0 .2em 0;
+		letter-spacing: 1px;
+		clear: both;
+	}
+
+	.nav .contact {
+		width: auto;
+		float: left; 
+		clear: both;
+		margin: 0 0 1em 0;
+		padding: 0 0 0 0;
+	}
+
+		.nav .contact .email {
+			font-size: 1em;
+			width: auto;
+			display: block;
+			float: left;
+			clear: left;
+			margin: 0;
+		}
+
+		.nav .contact .resume {
+			font-size: 1em;
+			width: auto;
+			display: block;
+			float: left;
+			clear: right;
+			margin: .2em 0 0 1em;
+		}
+
+			footer .nav .contact .email {
+				font-size: 1em;
+				width: auto;
+				display: block;
+				float: left;
+				clear: left;
+				margin: 0;
+			}
+
+			footer .nav .contact .resume {
+				font-size: 1em;
+				display: block;
+				float: left;
+				clear: right;
+				margin: .2em 0 0 1em;
+			}
+
+	.about {
+		width: 96.5%;
+	}
+
+	.right blockquote p {
+		font-size: .85em;
+	}
+
+	.quote {
+		height: inherit;
+		margin-bottom: 2rem;
+	}
+
+	.left .head {
+		margin: .75em 0 1.25em 0;
+	}
+	
+	.left .head h1 {
+		font-size: 2em;
+		margin: 0.1em 0 0 0;
+		padding: 0;
+		width: auto;
+		line-height: 1.05em;
+	}
+	
+	.about {
+		// width: 96.1%;
+		// background: red;
+	}
+
+	.quote {
+		width: 100%;
+	}
+
+} //MINI-TABLET
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+// #####################
+// #####################
+//       __  __      __ 
+//  |\/|/  \|__)||  |_  
+//  |  |\__/|__)||__|__ 
+                     
+// #####################
+// #####################
+
+@include at-breakpoint($mobile) {
+	
+	.content {
+		@include span-columns(10);
+		@include isolate(2);
+		// display: block;
+		// clear: left;
+		text-align: left;
+		clear: both;
+		// margin: 0 0 1em 0;
+		// background: orange;
+		// @include susy-grid-background;
+
+	}
+
+	.left {
+		@include span-columns(12);
+		@include isolate(1);
+		display: inline-block;
+		float: left;
+		clear: both;
+		// width: 90%;
+		// margin: .5em 0 0 -1em;
+	}
+
+	.right {
+		@include span-columns(12);
+		@include isolate(1);
+		display: inline-block;
+		float: left;
+		clear: both;
+		// width: 90%;
+		// margin: 0 0 0 -1em;
+	}
+
+
+	.skills {
+		margin: 0;
+	}
+
+	.left .head {
+		margin: .5em 0 1.2em 0;
+	}
+
+	.left .head h1 {
+		font-size: 1.8em;
+		margin: 0.4em 0 0 0;
+		padding: 0;
+		// width: auto;
+		line-height: 1.05em;
+	}
+
+	
+	.nav h1 {
+		font-size: 3.925em;
+		clear: both;
+		// background-color: red;
+	}
+
+	.nav h2 {
+		font-size: 1.8em;
+		margin: .2em 0 .15em 0;
+		letter-spacing: .01em;
+		clear: both;
+	}
+
+	.nav .contact {
+		width: 100%;
+		float: left; 
+		clear: both;
+		margin: 0 0 1em 0;
+	}
+
+		.nav .contact .email {
+			font-size: 1em;
+			width: auto;
+			display: block;
+			float: left;
+			clear: left;
+			margin: 0;
+		}
+
+		.nav .contact .resume {
+			font-size: 1em;
+			width: auto;
+			display: block;
+			float: left;
+			clear: right;
+			margin: .2em 0 0 1em;
+		}
+
+			footer .nav .contact .email {
+				font-size: 1em;
+				width: auto;
+				display: block;
+				float: left;
+				clear: left;
+				margin: 0;
+			}
+
+			footer .nav .contact .resume {
+				font-size: 1em;
+				display: block;
+				float: left;
+				clear: right;
+				margin: .15em 0 0 1em;
+			}
+
+	.about {
+		width: 96.5%;
+	}
+
+	.quote {
+		width: 103.8%;
+	}
+
+
+}  // END MOBILE
+
+// ############ END MOBILE
+// #######################################
+

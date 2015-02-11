@@ -1,0 +1,29 @@
+@import "compass";
+@import "susy";
+@import "../css/main.css"; //HTML5 BP
+@import "../css/normalize.css"; //HTML5 BP
+@import "../css/ie.css"; //HTML5 BP
+// @import "rgbapng";
+// @import "compass-blend-modes";
+// @import "../css/fonts/osp-din/osp-din.css";
+// @import "../css/fonts/asap/asap.css";
+@import "../css/fonts/veneer/veneer.css";
+@import "../css/fonts/American_typewriter/american_typewriter/american_typewriter.css";
+// @import "../css/flexslider.css";
+
+// SUSY >>>>>>>>>>
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 5em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+// $container-style: fluid;
+// $container-style: static;
+$container-style: magic;
+
+//alternative layout breakpoints
+$tablet: 		8 70em; 
+// $tabletSm: 		10 57em; 
+$mini-tablet: 	5 40em;
+$mobile: 		5 30em;
+
