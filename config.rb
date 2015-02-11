@@ -75,8 +75,6 @@ helpers do
 
 end
 
-
-
 set :css_dir, 'css'
 
 set :js_dir, 'js'
@@ -105,3 +103,5 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+activate :livereload
