@@ -3,7 +3,7 @@
 @import url(../css/ie.css);
 @import url(../css/fonts/veneer/veneer.css);
 @import url(../css/fonts/American_typewriter/american_typewriter/american_typewriter.css);
-/* line 36, ../scss/screen.scss */
+/* line 46, ../scss/screen.scss */
 a {
   color: #46646e;
 }
@@ -16,21 +16,21 @@ a:hover {
   color: orange;
 }
 
-/* line 58, ../scss/screen.scss */
+/* line 65, ../scss/screen.scss */
 html {
   background-color: #333;
   margin: 0;
   padding: 0;
 }
 
-/* line 71, ../scss/screen.scss */
+/* line 77, ../scss/screen.scss */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 0.85em;
   line-height: 1.7em;
 }
 
-/* line 80, ../scss/screen.scss */
+/* line 85, ../scss/screen.scss */
 .fluid-container {
   *zoom: 1;
   max-width: 71em;
@@ -51,28 +51,28 @@ body {
   clear: both;
 }
 @media (max-width: 59.5em) {
-  /* line 80, ../scss/screen.scss */
+  /* line 85, ../scss/screen.scss */
   .fluid-container {
     max-width: 71em;
     _width: 71em;
   }
 }
-@media (max-width: 34em) {
-  /* line 80, ../scss/screen.scss */
+@media (max-width: 42.5em) {
+  /* line 85, ../scss/screen.scss */
   .fluid-container {
     max-width: 71em;
     _width: 71em;
   }
 }
-@media (max-width: 25.5em) {
-  /* line 80, ../scss/screen.scss */
+@media (max-width: 29.75em) {
+  /* line 85, ../scss/screen.scss */
   .fluid-container {
     max-width: 71em;
     _width: 71em;
   }
 }
 
-/* line 89, ../scss/screen.scss */
+/* line 94, ../scss/screen.scss */
 header, footer {
   color: #fffdf4;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(0, 0, 0, 0.2);
@@ -87,24 +87,24 @@ header, footer {
   display: inline;
 }
 
-/* line 105, ../scss/screen.scss */
+/* line 110, ../scss/screen.scss */
 header {
   margin: 0 0 1em 0;
   background: url(../img/bg/bg_bag_dk.jpg) repeat;
 }
 
-/* line 110, ../scss/screen.scss */
+/* line 115, ../scss/screen.scss */
 footer {
   margin: 1em 0 0 0;
   background: url(../img/bg/bg_bag_dk2.jpg) repeat;
 }
 
-/* line 115, ../scss/screen.scss */
+/* line 120, ../scss/screen.scss */
 .background {
   padding: 1em 0 1.5em 0;
 }
 
-/* line 123, ../scss/screen.scss */
+/* line 128, ../scss/screen.scss */
 .content {
   width: 100%;
   float: left;
@@ -115,7 +115,7 @@ footer {
   text-align: left;
   clear: both;
 }
-/* line 134, ../scss/screen.scss */
+/* line 138, ../scss/screen.scss */
 .content .left {
   width: 40.84507%;
   float: left;
@@ -124,7 +124,7 @@ footer {
   margin-right: -100%;
   margin-left: 8.4507%;
 }
-/* line 139, ../scss/screen.scss */
+/* line 142, ../scss/screen.scss */
 .content .right {
   width: 40.84507%;
   float: left;
@@ -134,14 +134,14 @@ footer {
   margin-left: 50.70423%;
 }
 
-/* line 150, ../scss/screen.scss */
+/* line 152, ../scss/screen.scss */
 #index .home,
 #resume .resume,
 #portfolio .portfolio {
   background-color: orange;
 }
 
-/* line 157, ../scss/screen.scss */
+/* line 158, ../scss/screen.scss */
 .nav {
   width: 83.09859%;
   float: left;
@@ -151,7 +151,7 @@ footer {
   margin-left: 8.4507%;
 }
 
-/* line 166, ../scss/screen.scss */
+/* line 167, ../scss/screen.scss */
 .nav h1 {
   display: block;
   float: left;
@@ -164,18 +164,18 @@ footer {
   line-height: 90%;
 }
 
-/* line 178, ../scss/screen.scss */
+/* line 179, ../scss/screen.scss */
 .nav h1 a {
   margin: 0em 0 0em 0;
   text-decoration: none;
 }
 
-/* line 182, ../scss/screen.scss */
+/* line 184, ../scss/screen.scss */
 .nav h1 a:hover {
   color: orange;
 }
 
-/* line 186, ../scss/screen.scss */
+/* line 188, ../scss/screen.scss */
 .nav h2 {
   font-family: "Veneer", Helvetica, Arial, sans-serif;
   font-size: 2.125em;
@@ -190,16 +190,16 @@ footer {
   line-height: .968em;
 }
 
-/* line 202, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 .nav a {
   color: #fffdf4;
 }
-/* line 204, ../scss/screen.scss */
+/* line 206, ../scss/screen.scss */
 .nav a:hover {
   color: orange;
 }
 
-/* line 209, ../scss/screen.scss */
+/* line 211, ../scss/screen.scss */
 .contact {
   color: #fffdf4;
   margin: .55em 1em 0 0;
@@ -211,34 +211,35 @@ footer {
   text-align: center;
 }
 @media (max-width: 59.5em) {
-  /* line 209, ../scss/screen.scss */
+  /* line 211, ../scss/screen.scss */
   .contact {
     font-size: 1.25em;
   }
 }
-/* line 227, ../scss/screen.scss */
+/* line 229, ../scss/screen.scss */
 .contact .email {
   line-height: 1.1em;
   margin: .75em 0 0 0;
   padding: 0;
   letter-spacing: .05em;
 }
-/* line 233, ../scss/screen.scss */
+/* line 234, ../scss/screen.scss */
 .contact .email a {
   text-decoration: none;
 }
-/* line 235, ../scss/screen.scss */
+/* line 236, ../scss/screen.scss */
 .contact .email a:hover {
   color: orange;
 }
-/* line 240, ../scss/screen.scss */
+/* line 241, ../scss/screen.scss */
 .contact .resume {
+  font-size: 0.76em;
   line-height: 1em;
   margin: .0em 0 0 0;
   padding: 0;
   letter-spacing: .05em;
 }
-/* line 246, ../scss/screen.scss */
+/* line 247, ../scss/screen.scss */
 .contact .resume a {
   text-decoration: none;
 }
@@ -280,7 +281,7 @@ h2, h3, h4, h5 {
   padding: 0;
   width: 73px;
   height: 89px;
-  background-image: url("/img/drew_head.png");
+  background-image: url("../img/drew_head.png");
   float: left;
   display: block;
   clear: left;
@@ -288,13 +289,13 @@ h2, h3, h4, h5 {
 
 /* line 302, ../scss/screen.scss */
 .left .head h1 {
-  font-size: 1.75em;
+  font-size: 2.05em;
   font-family: "Veneer", Helvetica, Arial, sans-serif;
-  margin: 1.25em 0em 0 0;
+  margin: 0.95em 0em 0 0;
   color: #C02C19;
   line-height: 1.1em;
   text-shadow: 3px 0px 3px white;
-  padding: 0 2em 0 0;
+  padding: 0 0em 0 0;
 }
 
 /* line 316, ../scss/screen.scss */
@@ -309,7 +310,7 @@ h2, h3, h4, h5 {
   letter-spacing: 0.075em;
 }
 
-/* line 328, ../scss/screen.scss */
+/* line 327, ../scss/screen.scss */
 .about {
   display: inline-block;
   float: left;
@@ -325,12 +326,12 @@ h2, h3, h4, h5 {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* line 341, ../scss/screen.scss */
+/* line 340, ../scss/screen.scss */
 .aboutinner {
   display: inline-block;
 }
 
-/* line 346, ../scss/screen.scss */
+/* line 345, ../scss/screen.scss */
 .about .british_american_flag {
   width: 15.49296%;
   float: left;
@@ -340,13 +341,13 @@ h2, h3, h4, h5 {
   margin-left: 0%;
 }
 
-/* line 351, ../scss/screen.scss */
+/* line 350, ../scss/screen.scss */
 .about .british_american_flag img {
   width: 100%;
   height: auto;
 }
 
-/* line 356, ../scss/screen.scss */
+/* line 355, ../scss/screen.scss */
 .about .copy {
   font-size: .85em;
   width: 83.09859%;
@@ -357,12 +358,12 @@ h2, h3, h4, h5 {
   margin-left: 16.90141%;
 }
 
-/* line 362, ../scss/screen.scss */
+/* line 361, ../scss/screen.scss */
 .about .copy p {
   margin: 0 0 0 1em;
 }
 
-/* line 367, ../scss/screen.scss */
+/* line 365, ../scss/screen.scss */
 h2 {
   font-size: 2.25em;
   color: orange;
@@ -370,29 +371,29 @@ h2 {
   font-family: "Veneer", Helvetica, Arial, sans-serif;
 }
 
-/* line 374, ../scss/screen.scss */
+/* line 372, ../scss/screen.scss */
 .content h2:first-of-type {
   margin: 0 0 0 0;
 }
 
-/* line 379, ../scss/screen.scss */
+/* line 376, ../scss/screen.scss */
 h3 {
   font-size: 1.7em;
   color: #46646e;
 }
 
-/* line 384, ../scss/screen.scss */
+/* line 381, ../scss/screen.scss */
 h4 {
   font-size: 1.5em;
   letter-spacing: .04em;
 }
 
-/* line 389, ../scss/screen.scss */
+/* line 386, ../scss/screen.scss */
 h5 {
   font-size: 0.85em;
 }
 
-/* line 394, ../scss/screen.scss */
+/* line 390, ../scss/screen.scss */
 p {
   font-family: "AmericanTypewriterStd-Med", Helvetica, Arial, sans-serif;
   color: #5b7d96;
@@ -403,7 +404,7 @@ p {
   padding: 0;
 }
 
-/* line 405, ../scss/screen.scss */
+/* line 401, ../scss/screen.scss */
 ul {
   list-style-type: square;
   padding: 0;
@@ -414,7 +415,7 @@ ul {
   text-align: left;
 }
 
-/* line 415, ../scss/screen.scss */
+/* line 411, ../scss/screen.scss */
 li {
   list-style-position: outside;
   margin: .25em 0em 0 1em;
@@ -422,39 +423,39 @@ li {
   line-height: 1.6em;
 }
 
-/* line 422, ../scss/screen.scss */
+/* line 418, ../scss/screen.scss */
 .indent {
   padding-left: 1.5em;
 }
 
-/* line 426, ../scss/screen.scss */
+/* line 422, ../scss/screen.scss */
 .one {
   background-color: #8fa9c2;
   background: url(../img/bg-steel-02.png) repeat;
   margin: 0 0 1em 0;
 }
 
-/* line 434, ../scss/screen.scss */
+/* line 430, ../scss/screen.scss */
 .two {
   background-color: #8fa9c2;
   background: url(../img/bg-steel-02.png) repeat;
   margin: 0 0 1em 0;
 }
 
-/* line 442, ../scss/screen.scss */
+/* line 438, ../scss/screen.scss */
 .three {
   background-color: #8fa9c2;
   background: url(../img/bg-steel-02.png) repeat;
   margin: 0 0 1em 0;
 }
 
-/* line 450, ../scss/screen.scss */
+/* line 446, ../scss/screen.scss */
 .four {
   background-color: #8fa9c2;
   margin: 0 0 1em 0;
 }
 
-/* line 459, ../scss/screen.scss */
+/* line 454, ../scss/screen.scss */
 .skills {
   display: inline-block;
   float: left;
@@ -463,7 +464,7 @@ li {
   padding: 0;
   text-align: center;
 }
-/* line 468, ../scss/screen.scss */
+/* line 462, ../scss/screen.scss */
 .skills .col1 {
   width: 23.94366%;
   float: left;
@@ -472,7 +473,7 @@ li {
   margin-right: -100%;
   margin-left: 0%;
 }
-/* line 474, ../scss/screen.scss */
+/* line 469, ../scss/screen.scss */
 .skills .col2 {
   width: 23.94366%;
   float: left;
@@ -481,7 +482,7 @@ li {
   margin-right: -100%;
   margin-left: 25.35211%;
 }
-/* line 480, ../scss/screen.scss */
+/* line 476, ../scss/screen.scss */
 .skills .col3 {
   width: 23.94366%;
   float: left;
@@ -490,7 +491,7 @@ li {
   margin-right: -100%;
   margin-left: 50.70423%;
 }
-/* line 486, ../scss/screen.scss */
+/* line 483, ../scss/screen.scss */
 .skills .col4 {
   width: 23.94366%;
   float: left;
@@ -499,7 +500,7 @@ li {
   margin-right: -100%;
   margin-left: 76.05634%;
 }
-/* line 492, ../scss/screen.scss */
+/* line 490, ../scss/screen.scss */
 .skills .icon {
   display: inline-block;
   clear: left;
@@ -509,7 +510,7 @@ li {
   text-align: center;
 }
 
-/* line 505, ../scss/screen.scss */
+/* line 501, ../scss/screen.scss */
 .right .flexslider {
   background-color: #fffdf4;
   display: block;
@@ -526,23 +527,23 @@ li {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* line 521, ../scss/screen.scss */
+/* line 517, ../scss/screen.scss */
 .flexslider .slides img {
   width: 100%;
   height: auto;
 }
 
-/* line 526, ../scss/screen.scss */
+/* line 522, ../scss/screen.scss */
 .slides > li {
   margin: 0em;
 }
 
-/* line 530, ../scss/screen.scss */
+/* line 526, ../scss/screen.scss */
 .flex-control-nav {
   display: none;
 }
 
-/* line 534, ../scss/screen.scss */
+/* line 530, ../scss/screen.scss */
 .quote {
   float: left;
   clear: both;
@@ -552,7 +553,7 @@ li {
   margin: 0em 0 0em 0;
 }
 
-/* line 546, ../scss/screen.scss */
+/* line 542, ../scss/screen.scss */
 blockquote {
   background-color: darkred;
   margin: 0;
@@ -564,7 +565,7 @@ blockquote {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* line 559, ../scss/screen.scss */
+/* line 555, ../scss/screen.scss */
 .right blockquote p {
   color: #fffdf4;
   padding: .75em .5em 0em .5em;
@@ -573,7 +574,7 @@ blockquote {
   font-size: .95em;
 }
 
-/* line 567, ../scss/screen.scss */
+/* line 563, ../scss/screen.scss */
 blockquote cite {
   color: #fffdf4;
   font-style: italic;
@@ -585,7 +586,7 @@ blockquote cite {
 }
 
 @media (max-width: 59.5em) {
-  /* line 607, ../scss/screen.scss */
+  /* line 598, ../scss/screen.scss */
   .content .left {
     width: 83.09859%;
     float: left;
@@ -595,7 +596,7 @@ blockquote cite {
     margin-left: 8.4507%;
     clear: both;
   }
-  /* line 613, ../scss/screen.scss */
+  /* line 603, ../scss/screen.scss */
   .content .right {
     width: 83.09859%;
     float: left;
@@ -606,7 +607,7 @@ blockquote cite {
     clear: both;
   }
 
-  /* line 621, ../scss/screen.scss */
+  /* line 609, ../scss/screen.scss */
   .nav h1 {
     font-size: 4.8em;
     margin: .15em 0 -4px -4px;
@@ -615,10 +616,10 @@ blockquote cite {
     clear: left;
   }
 
-  /* line 632, ../scss/screen.scss */
+  /* line 620, ../scss/screen.scss */
   .nav h2 {
     font-size: 2.25em;
-    margin: .4em 0 .7em 0;
+    margin: 0.2em 0 0.4em 0;
     letter-spacing: 0em;
     display: block;
     float: left;
@@ -626,7 +627,7 @@ blockquote cite {
     width: auto;
   }
 
-  /* line 649, ../scss/screen.scss */
+  /* line 636, ../scss/screen.scss */
   .nav .contact {
     margin: -2em 1em 0 0;
     padding: 0;
@@ -636,7 +637,7 @@ blockquote cite {
     width: auto;
   }
 
-  /* line 659, ../scss/screen.scss */
+  /* line 646, ../scss/screen.scss */
   .nav .contact .email {
     font-size: 1.3em;
     line-height: 1.3em;
@@ -648,9 +649,9 @@ blockquote cite {
     width: auto;
   }
 
-  /* line 672, ../scss/screen.scss */
+  /* line 658, ../scss/screen.scss */
   .nav .contact .resume {
-    font-size: 1.3em;
+    font-size: .96em;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -659,12 +660,12 @@ blockquote cite {
     width: auto;
   }
 
-  /* line 688, ../scss/screen.scss */
+  /* line 673, ../scss/screen.scss */
   .left .head {
     margin: 0.5em 0 .75em 0;
   }
 
-  /* line 692, ../scss/screen.scss */
+  /* line 676, ../scss/screen.scss */
   .left .head .drewhead {
     margin: 0 1em 0 0;
     padding: 0;
@@ -675,14 +676,14 @@ blockquote cite {
     clear: left;
   }
 
-  /* line 705, ../scss/screen.scss */
+  /* line 689, ../scss/screen.scss */
   .left .head h1 {
-    font-size: 2.35em;
+    font-size: 2.65em;
     display: block;
     float: none;
     clear: none;
     width: auto;
-    margin: .5em 0 0 0;
+    margin: 0.3em 0 0 0;
     padding: 0 2em 0 0;
     color: #C02C19;
     line-height: 1.1em;
@@ -691,7 +692,7 @@ blockquote cite {
     width: 80%;
   }
 
-  /* line 727, ../scss/screen.scss */
+  /* line 708, ../scss/screen.scss */
   .left p {
     color: #444444;
     display: inline-block;
@@ -703,38 +704,38 @@ blockquote cite {
     margin: 0 0 1em 0;
   }
 
-  /* line 741, ../scss/screen.scss */
+  /* line 720, ../scss/screen.scss */
   .right .flexslider {
     margin: 0 0 1em 0;
   }
 
-  /* line 745, ../scss/screen.scss */
+  /* line 723, ../scss/screen.scss */
   .about {
     width: 96.8%;
   }
 
-  /* line 748, ../scss/screen.scss */
+  /* line 726, ../scss/screen.scss */
   .quote {
     width: 99.3%;
   }
 }
-@media (max-width: 34em) {
-  /* line 771, ../scss/screen.scss */
+@media (max-width: 42.5em) {
+  /* line 748, ../scss/screen.scss */
   .nav h1 {
-    font-size: 4.7em;
+    font-size: 5.8em;
     margin: .2em 0 0em 0;
     letter-spacing: .02em;
   }
 
-  /* line 778, ../scss/screen.scss */
+  /* line 755, ../scss/screen.scss */
   .nav h2 {
-    font-size: 1.7em;
+    font-size: 2.5em;
     margin: .2em 0 .2em 0;
     letter-spacing: 1px;
     clear: both;
   }
 
-  /* line 785, ../scss/screen.scss */
+  /* line 761, ../scss/screen.scss */
   .nav .contact {
     width: auto;
     float: left;
@@ -743,7 +744,7 @@ blockquote cite {
     padding: 0 0 0 0;
   }
 
-  /* line 793, ../scss/screen.scss */
+  /* line 768, ../scss/screen.scss */
   .nav .contact .email {
     font-size: 1em;
     width: auto;
@@ -753,17 +754,17 @@ blockquote cite {
     margin: 0;
   }
 
-  /* line 802, ../scss/screen.scss */
+  /* line 776, ../scss/screen.scss */
   .nav .contact .resume {
     font-size: 1em;
     width: auto;
     display: block;
     float: left;
     clear: right;
-    margin: .2em 0 0 1em;
+    margin: .13em 0 0 1em;
   }
 
-  /* line 811, ../scss/screen.scss */
+  /* line 784, ../scss/screen.scss */
   footer .nav .contact .email {
     font-size: 1em;
     width: auto;
@@ -773,7 +774,7 @@ blockquote cite {
     margin: 0;
   }
 
-  /* line 820, ../scss/screen.scss */
+  /* line 792, ../scss/screen.scss */
   footer .nav .contact .resume {
     font-size: 1em;
     display: block;
@@ -782,43 +783,43 @@ blockquote cite {
     margin: .2em 0 0 1em;
   }
 
-  /* line 828, ../scss/screen.scss */
+  /* line 799, ../scss/screen.scss */
   .about {
     width: 96.5%;
   }
 
-  /* line 832, ../scss/screen.scss */
+  /* line 802, ../scss/screen.scss */
   .right blockquote p {
     font-size: .85em;
   }
 
-  /* line 836, ../scss/screen.scss */
+  /* line 805, ../scss/screen.scss */
   .quote {
     height: inherit;
     margin-bottom: 2rem;
   }
 
-  /* line 841, ../scss/screen.scss */
+  /* line 809, ../scss/screen.scss */
   .left .head {
     margin: .75em 0 1.25em 0;
   }
 
-  /* line 845, ../scss/screen.scss */
+  /* line 812, ../scss/screen.scss */
   .left .head h1 {
-    font-size: 2em;
-    margin: 0.1em 0 0 0;
+    font-size: 2.6em;
+    margin: 0.3em 0 0 0;
     padding: 0;
     width: auto;
     line-height: 1.05em;
   }
 
-  /* line 858, ../scss/screen.scss */
+  /* line 824, ../scss/screen.scss */
   .quote {
     width: 100%;
   }
 }
-@media (max-width: 25.5em) {
-  /* line 879, ../scss/screen.scss */
+@media (max-width: 29.75em) {
+  /* line 844, ../scss/screen.scss */
   .content {
     width: 83.09859%;
     float: left;
@@ -830,7 +831,7 @@ blockquote cite {
     clear: both;
   }
 
-  /* line 892, ../scss/screen.scss */
+  /* line 856, ../scss/screen.scss */
   .left {
     width: 100%;
     float: left;
@@ -843,7 +844,7 @@ blockquote cite {
     clear: both;
   }
 
-  /* line 902, ../scss/screen.scss */
+  /* line 866, ../scss/screen.scss */
   .right {
     width: 100%;
     float: left;
@@ -856,39 +857,39 @@ blockquote cite {
     clear: both;
   }
 
-  /* line 913, ../scss/screen.scss */
+  /* line 876, ../scss/screen.scss */
   .skills {
     margin: 0;
   }
 
-  /* line 917, ../scss/screen.scss */
+  /* line 879, ../scss/screen.scss */
   .left .head {
     margin: .5em 0 1.2em 0;
   }
 
-  /* line 921, ../scss/screen.scss */
+  /* line 882, ../scss/screen.scss */
   .left .head h1 {
-    font-size: 1.8em;
-    margin: 0.4em 0 0 0;
+    font-size: 2em;
+    margin: 0.2em 0 0 0;
     padding: 0;
     line-height: 1.05em;
   }
 
-  /* line 930, ../scss/screen.scss */
+  /* line 889, ../scss/screen.scss */
   .nav h1 {
-    font-size: 3.925em;
+    font-size: 4.925em;
     clear: both;
   }
 
-  /* line 936, ../scss/screen.scss */
+  /* line 895, ../scss/screen.scss */
   .nav h2 {
-    font-size: 1.8em;
+    font-size: 2.23em;
     margin: .2em 0 .15em 0;
     letter-spacing: .01em;
     clear: both;
   }
 
-  /* line 943, ../scss/screen.scss */
+  /* line 901, ../scss/screen.scss */
   .nav .contact {
     width: 100%;
     float: left;
@@ -896,7 +897,7 @@ blockquote cite {
     margin: 0 0 1em 0;
   }
 
-  /* line 950, ../scss/screen.scss */
+  /* line 907, ../scss/screen.scss */
   .nav .contact .email {
     font-size: 1em;
     width: auto;
@@ -906,7 +907,7 @@ blockquote cite {
     margin: 0;
   }
 
-  /* line 959, ../scss/screen.scss */
+  /* line 915, ../scss/screen.scss */
   .nav .contact .resume {
     font-size: 1em;
     width: auto;
@@ -916,7 +917,7 @@ blockquote cite {
     margin: .2em 0 0 1em;
   }
 
-  /* line 968, ../scss/screen.scss */
+  /* line 923, ../scss/screen.scss */
   footer .nav .contact .email {
     font-size: 1em;
     width: auto;
@@ -926,7 +927,7 @@ blockquote cite {
     margin: 0;
   }
 
-  /* line 977, ../scss/screen.scss */
+  /* line 931, ../scss/screen.scss */
   footer .nav .contact .resume {
     font-size: 1em;
     display: block;
@@ -935,13 +936,23 @@ blockquote cite {
     margin: .15em 0 0 1em;
   }
 
-  /* line 985, ../scss/screen.scss */
+  /* line 938, ../scss/screen.scss */
   .about {
     width: 96.5%;
   }
 
-  /* line 989, ../scss/screen.scss */
+  /* line 941, ../scss/screen.scss */
   .quote {
     width: 103.8%;
+  }
+
+  /* line 944, ../scss/screen.scss */
+  .contact {
+    font-size: 1.05em;
+  }
+
+  /* line 947, ../scss/screen.scss */
+  .left p {
+    font-size: .95rem;
   }
 }

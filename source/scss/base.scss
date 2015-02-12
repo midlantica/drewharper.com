@@ -22,8 +22,9 @@ $grid-padding   : $gutter-width;  // grid-padding equal to gutters
 $container-style: magic;
 
 //alternative layout breakpoints
-$tablet: 		8 70em; 
-// $tabletSm: 		10 57em; 
-$mini-tablet: 	5 40em;
-$mobile: 		5 30em;
+$tablet:        8 70em;
+// $tabletSm:       10 57em;
+$mini-tablet:   5 50em;
+// $mobile-lg:     5 40em;
+$mobile:        5 35em;
 
